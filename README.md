@@ -2,7 +2,7 @@
 
 ## Usage
 1. Substitude the hwAddr and name with your Bluetooth host hardware address, and network name
-You can use Bluetoothctl to obtain these two information on your host device like:
+You can use Bluetoothctl to obtain these two information on your host device like:  
 ```
 $ bluetoothctl
 [NEW] ... // here would show your network name
@@ -10,8 +10,8 @@ $ bluetoothctl
 ... // here would show your host hardware address
 [bluetooth]# quit
 ```
-2. Append a commond to /etc/rc.local, then LinuxAutoBT would be excute once startup 
-Example: (You can use whatever text editor with privileged authority)
+2. Append a commond to /etc/rc.local, then LinuxAutoBT would be excute once startup.  
+Example: (You can use whatever text editor with privileged authority)  
 ```
 $ sudo gedit /etc/rc.local
 python /THE_FOLDER_OF_LINUXAUTOBT/main.py & # '&' cannot be omitted 
