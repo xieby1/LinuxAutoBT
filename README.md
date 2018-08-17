@@ -5,9 +5,9 @@
 You can use Bluetoothctl to obtain these two information on your host device like:
 ```
 $ bluetoothctl
-[NEW] ...
+[NEW] ... // here would show your network name
 [bluetooth]# show
-...
+... // here would show your host hardware address
 [bluetooth]# quit
 ```
 2. Append a commond to /etc/rc.local, then LinuxAutoBT would be excute once startup 
