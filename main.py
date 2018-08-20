@@ -48,10 +48,12 @@ for x in devices:
             break
 
 
-logFile = open("state logs", 'a')
+
 temp_ds = device.State
 prevState = isConnected(temp_ds)
+logFile = open("state logs", 'a')
 logFile.write(str(temp_ds) + " " + NetworkManager.const('device_state', temp_ds) + '\n')
+logFile.close()
 if not prevState:
     NetworkManager.NetworkManager.ActivateConnection(connection, device, "/")
 
@@ -73,4 +75,6 @@ while True:
     elif prevState and not curState:
         sleepTime = 1
         prevState = curState
+    logFile = open("state logs", 'a')
     logFile.write(str(temp_ds) + " " + NetworkManager.const('device_state', temp_ds) + '\n')
+    logFile.close()
