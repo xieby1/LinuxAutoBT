@@ -28,7 +28,8 @@ def cmpbdhwAddr(bdAddr, hwAddr):
     return True
 
 
-hwAddr = "2C:57:31:07:C5:61"  # Tse Hotspot
+# hwAddr = "2C:57:31:07:C5:61"  # Tse Hotspot
+hwAddr = "30:3A:64:E7:76:00"  # laptop
 
 # firstly, find the connection by hwAddr.
 connections = NetworkManager.Settings.ListConnections()
