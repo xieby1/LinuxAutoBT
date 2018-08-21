@@ -31,10 +31,10 @@ def cmpbdhwAddr(bdAddr, hwAddr):
 
 # Add your host device hardware address here
 # TIP: the entry nearer the list top has higher priority
-priorityList = {
+priorityList = [
                 "30:3A:64:E7:76:00",    # laptop
                 "2C:57:31:07:C5:61"     # Tse Hotspot
-                }
+                ]
 
 
 prevState = False
