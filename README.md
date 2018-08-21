@@ -1,6 +1,19 @@
 # LinuxAutoBT: A piece of code can turn on your bluetooth automatically.
 
 ## Usage
+0. Dependency:  
+- python-networkmanager [A set of python wrapped networkmanager api]
+```
+$ pip install python-networkmanager
+```
+- bluetooth.h  
+```
+$ sudo apt-get install libbluetooth-dev
+```
+- pybluez [A python wrapped bluez api]
+```
+$ pip install pybluez
+```
 1. Substitude the hwAddr and name with your Bluetooth host hardware address, and network name
 You can use Bluetoothctl to obtain these two information on your host device like:  
 ```
@@ -30,7 +43,11 @@ Type man NetworkManager into terminal you could get more information
 ### NetworkManager API (Application Programming Interface)
 Here is their [online reference](https://developer.gnome.org/NetworkManager/1.2/spec.html)
 ### python-networkmanager
-A python version of NetworkManager, its [Github Page](https://github.com/seveas/python-networkmanager)
+A python version of NetworkManager, 
+its [Github Page](https://github.com/seveas/python-networkmanager)
+### pybluez
+A python version of bluez, by which you can access system bluetooth resources, 
+its [Github Page](https://github.com/pybluez/pybluez)
 ### Some Articles about D-Bus
 Though I read these articles roughly, and they has less related to the codes, it is good for further study.
 [D-Bus Tutorial](https://dbus.freedesktop.org/doc/dbus-tutorial.html)
