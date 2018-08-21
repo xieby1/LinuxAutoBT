@@ -1,7 +1,7 @@
 # LinuxAutoBT: A piece of code can turn on your bluetooth automatically.
 
 ## Usage
-####0. Dependency:  
+#### 0. Dependency:  
 - **python-networkmanager** [A set of python wrapped networkmanager api]
 ```
 $ pip install python-networkmanager
@@ -14,7 +14,7 @@ $ sudo apt-get install libbluetooth-dev
 ```
 $ pip install pybluez
 ```
-####1. Substitude the hwAddr in priortyList with your Bluetooth host hardware address
+#### 1. Substitude the hwAddr in priortyList with your Bluetooth host hardware address
 You can use Bluetoothctl to obtain these two information on your host device like:  
 ```
 $ bluetoothctl
@@ -23,13 +23,13 @@ $ bluetoothctl
 ... // here would show your host hardware address
 [bluetooth]# quit
 ```
-####2. Append a commond to /etc/rc.local, then LinuxAutoBT would be excute once startup.  
+#### 2. Append a commond to /etc/rc.local, then LinuxAutoBT would be excute once startup.  
 Example: (You can use whatever text editor with privileged authority)  
 ```
 $ sudo gedit /etc/rc.local
 python /THE_FOLDER_OF_LINUXAUTOBT/main.py & # '&' cannot be omitted 
 ```
-####3. Reboot you device and test it
+#### 3. Reboot you device and test it
 
 ## TODO-LIST
 - Add daemon mode
